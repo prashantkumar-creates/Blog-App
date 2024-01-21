@@ -25,3 +25,13 @@ app.listen(3000, () => {
 
 app.use('/api/user',Userrouter);
 app.use('/api/user',authRoute);
+
+app.use((err, req,res, next) => {
+    const statuscode = err.statuscode
+    const message = err.message
+    res.status(statuscode).json({
+        success:"false",
+        statuscode,
+        message,
+    })
+})
