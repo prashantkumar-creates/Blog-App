@@ -1,6 +1,7 @@
 import { error } from 'console';
 import express from 'express'
 import mongoose from 'mongoose';
+import Userrouter from './routes/user.route.js';
 import dotenv from 'dotenv'
 
 
@@ -15,11 +16,8 @@ mongoose.connect(process.env.MONGO_URL)
     console.log(error);
 })
 
-
-app.get('/',(req,res) => {
-    res.send("Home is sending something")
-})
-
 app.listen(3000, () => {
     console.log("app is listnign on port 3000!!!!");
 })
+
+app.use('/api/user',Userrouter)

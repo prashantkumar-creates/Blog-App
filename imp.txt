@@ -1,3 +1,0 @@
-to use .env we requrie dotenv package 
-import that package in main 
-then comfigur it **** comfigur is import
