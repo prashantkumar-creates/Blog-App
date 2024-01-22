@@ -34,7 +34,7 @@ function Signup() {
               <Button gradientDuoTone="pinkToOrange" type="submit">Sing Up</Button>
              </form>
              <div className=" flex gap-2 text-sm mt-3">
-             <span>Already have an account?<Link className="text-blue-500" to="/signIn">Sign In</Link></span>
+             <span>Allready have an account?<Link className="text-blue-500" to="/signIn">Sign In</Link></span>
              </div>
           </div>
 
