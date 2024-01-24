@@ -7,6 +7,8 @@ import Dashboard from './pages/Dashboard.jsx'
 import Project from './pages/Project.jsx'
 import About from './pages/About.jsx'
 import Header from './components/Header.jsx'
+import FooterCom from './components/Footer.jsx'
+
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Route path='/About' element={<About />}/>
 
     </Routes>
+    <FooterCom />
+    
     </BrowserRouter>
   )
 }
