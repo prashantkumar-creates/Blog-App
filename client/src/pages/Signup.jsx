@@ -2,6 +2,7 @@ import { Alert, Button, Label, Spinner, TextInput } from "flowbite-react"
 import { HiInformationCircle } from 'react-icons/hi';
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom"
+import OAuth from "../components/OAuth";
 
 
 
@@ -81,6 +82,7 @@ function Signup() {
                   </>
                 ) : ' Sing Up'}
                </Button>
+               <OAuth />
              </form>
              <div className=" flex gap-2 text-sm mt-3">
              <span>Allready have an account?<Link className="text-blue-500" to="/signIn">Sign In</Link></span>
